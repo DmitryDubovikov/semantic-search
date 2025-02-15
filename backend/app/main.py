@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+
 from .qdrant_service import create_collection
-from .services import add_news_service, search_news_service
 from .schemas import NewsItem
+from .services import add_news_service, search_news_service
 
 app = FastAPI()
 

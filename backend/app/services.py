@@ -1,7 +1,8 @@
 import uuid
-from .schemas import NewsItem
+
 from .embeddings import encode_text
 from .qdrant_service import add_document, search_document
+from .schemas import NewsItem
 
 
 def add_news_service(item: NewsItem):
